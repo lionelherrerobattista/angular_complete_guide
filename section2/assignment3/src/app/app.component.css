@@ -1,0 +1,10 @@
+.log-item{
+    color: white;
+}
+
+.button-container{
+    display: flex;
+    flex-direction: column;
+    height: 5rem;
+    padding: 2rem;
+}

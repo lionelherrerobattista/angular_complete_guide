@@ -1,0 +1,12 @@
+
+
+<div class="container">
+  <div class="row">
+      <div class="col-xs-12">
+        <input type="text" [(ngModel)]="username" class="form-control" (input)="onUpdateUsername($event)">
+        <p>{{username}}</p>
+        <button class="btn btn-primary" [disabled]="usernameIsEmpty" (click)="onReset()">Reset</button>
+      </div>
+  </div>
+</div>
+

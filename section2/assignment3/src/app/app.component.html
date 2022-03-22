@@ -1,0 +1,13 @@
+<div class="button-container">
+  <button (click)="onDisplayClick()">Display Details</button>
+  <p *ngIf="showParagraph">Secret Password = tuna</p>
+</div>
+<div class="log-container">
+  <label for="clicks">Clicks:</label>
+  <ul>
+    <li *ngFor="let click of clicks; let i = index" 
+      [ngStyle]="{backgroundColor: getColor(i)}" 
+      [ngClass]="{'log-item': i >= 4}"
+    >{{click}}</li>
+  </ul>
+</div>
