@@ -7,8 +7,9 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  @ViewChild('f') signupForm: NgForm;
-  defaultSubscription = 'advanced';
+  @ViewChild('f', {static:false}) signupForm: NgForm;
+  defaultSubscription = 'Advanced';
+  subscriptions = ['Basic', 'Advanced', 'Pro'];
 
   onSubmit(){
     console.log(this.signupForm);
